@@ -91,10 +91,10 @@ def check_rows():
 
 
 def check_columns():
-  #Call global variable
-  global in_progress
+    #Call global variable
+    global in_progress
 
- # Check columns for "X" or "O"
+    # Check columns for "X" or "O"
     column_1 = board[0] == board[3] == board[6] !="-"
     column_2 = board[1] == board[4] == board[7] !="-"
     column_3 = board[2] == board[5] == board[8] !="-"
@@ -126,7 +126,7 @@ def check_diagonals():
   
     # Chooses the winning player's symbol to return who won the game.
     if diagonal_1:
-    return board[0]
+        return board[0]
     elif diagonal_2:
         return board[6]
     return   
